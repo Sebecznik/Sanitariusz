@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Białe tło z zaokrąglonymi rogami -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+    <!-- Czerwony pasek -->
+    <item android:left="375dp">
+        <shape android:shape="rectangle">
+            <size android:width="30dp" android:height="100dp"/>
+            <solid android:color="@color/PrimaryDark"/> <!-- Czerwony -->
+        </shape>
+    </item>
+
+</layer-list>

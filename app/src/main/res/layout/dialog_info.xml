@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/rounded_bg">
+
+    <TextView
+        android:id="@+id/totalPatients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pacjenci: 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalProcedures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zabiegi: 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/totalPatients"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/PrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/toDoProcedures"
+        app:layout_constraintTop_toBottomOf="@+id/totalProcedures"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/toDoProcedures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do wykonania: 0"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/totalProcedures"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/inProgressProcedures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W trakcie: 0"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/toDoProcedures"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/finishedProcedures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zakończone: 0"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/inProgressProcedures"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/onTimeProcedures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Na czas: 0"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/finishedProcedures"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

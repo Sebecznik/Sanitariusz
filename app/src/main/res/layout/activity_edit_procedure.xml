@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/Background">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEditProcedure"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:titleTextColor="@color/Background"
+        android:background="@color/Primary"
+        android:paddingTop="40dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEditTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edytuj zabieg"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/Primary"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/etProcedureText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Treść zabiegu"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/Text"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnPickTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ustaw godzinę"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/PrimaryDark"
+                android:textColor="@color/Accent"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTimeDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brak godziny"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/Primary" />
+
+            <Button
+                android:id="@+id/btnDeleteProcedure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuń zabieg"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/PrimaryDark"
+                android:textColor="@color/Accent"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSaveProcedure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zapisz zmiany"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/Primary"
+                android:textColor="@color/Accent"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

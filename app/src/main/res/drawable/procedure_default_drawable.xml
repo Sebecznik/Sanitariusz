@@ -1,0 +1,14 @@
+<!-- res/drawable/procedure_default_drawable.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/procedure_blue_transparent" />
+<!--    <stroke-->
+<!--        android:width="2dp"-->
+<!--        android:color="@color/procedure_blue"/>-->
+    <corners android:radius="5dp"/>
+    <padding
+        android:left="12dp"
+        android:top="8dp"
+        android:right="12dp"
+        android:bottom="8dp"/>
+</shape>

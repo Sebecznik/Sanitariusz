@@ -1,0 +1,13 @@
+<!-- res/values-night/themes.xml (lub themes_night.xml) -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.SanitariuszApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Pozwala rysować pod paskiem statusu -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Ustawiamy przezroczysty status bar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- Włącza "translucent status", by layout mógł przechodzić za pasek -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

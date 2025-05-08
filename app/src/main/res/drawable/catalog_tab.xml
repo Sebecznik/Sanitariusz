@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Załóżmy, że zielony kolor to #80CFA9,
+         możesz tu użyć dowolnego. -->
+    <solid android:color="#80CFA9" />
+
+    <!-- Jeśli chcesz, by górne rogi zakładki też były zaokrąglone: -->
+    <corners
+        android:topLeftRadius="0dp"
+        android:topRightRadius="0dp"
+        android:bottomLeftRadius="12dp"
+        android:bottomRightRadius="0dp" />
+
+</shape>

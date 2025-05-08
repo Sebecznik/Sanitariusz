@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="220dp"
+    android:viewportWidth="160"
+    android:viewportHeight="100">
+
+    <!-- Biała karta z zakładką w prawym górnym rogu;
+         bez zaokrąglenia w lewym górnym rogu -->
+    <path
+        android:fillColor="#F8F8F8"
+        android:pathData="
+            M0,0
+            H100
+            C108,0 112,4 112,12
+            V20
+            C112,28 116,32 124,32
+            H1500
+            C158,32 164,38 164,46
+            V100
+            C164,108 158,114 150,114
+            H16
+            C8,114 0,106 0,98
+            V16
+            L0,0
+            Z" />
+</vector>
