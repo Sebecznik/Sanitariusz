@@ -1,2 +1,2 @@
 # Sanitariusz
-"Sanitariusz" is an app created simplifying patient
+"Sanitariusz" is an app created to simplify paramedic's work
